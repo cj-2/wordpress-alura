@@ -1,0 +1,137 @@
+/*
+Theme Name: Maluras
+Theme URI:
+Author: Yuri Padilha
+Author URI: http://www.caelum.com.br/;
+Description: Tema para imobiliária Maluras
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: imobiliária, maluras
+Text Domain: maluras
+*/
+
+/* reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Comum */
+
+html {
+	font-size: 16px;
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	font-family: 'Open Sans', sans-serif;
+	color: #747474;
+	-webkit-font-smoothing: antialiased;
+}
+
+.chamada-principal {
+	margin: 2rem 0;
+}
+
+.chamada-principal h1 {
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+
+.chamada-principal p {
+	font-size: 2rem;
+}
+
+.container {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+
+/* menu */
+
+header .container,
+#menu-menu-principal {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+header {
+	background-color: #555;
+}
+
+.menu li:not(:first-child) {
+	margin-left: 3rem;
+}
+
+.menu a {
+	text-decoration: none;
+	color: #FFF;
+	letter-spacing: .05rem;
+	font-weight: 300;
+}
+
+.menu li:hover a,
+.menu .current-menu-item a {
+	font-weight: 700;
+}
+
+header .container {
+	justify-content: center;
+	padding: .5rem 0;
+}
+
+.menu-item-type-custom a {
+	height: 80px;
+	width: 150px;
+	text-indent: -9999px;
+	display: block;
+}
+
+.menu-item-type-custom {
+	background-image: url(images/header-logo.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
